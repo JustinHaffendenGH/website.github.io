@@ -114,7 +114,7 @@ a {
 
 .services-title h1 {
     color: black;
-    font-size: 50px;
+    font-size: 3vw;
 }
 
 .thermal-container {
@@ -135,7 +135,7 @@ a {
 }
 
 .thermal-description h2 {
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 .thermal-img-container {
@@ -151,9 +151,9 @@ a {
 }
 
 .thermal-text {
+    font-size: 1vw;
     width: 80%;
     height: auto;
-    line-height: 30px;
 }
 
 .plumbing-container {
@@ -174,7 +174,7 @@ a {
 }
 
 .plumbing-description h2 {
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 .plumbing-img-container {
@@ -190,9 +190,9 @@ a {
 }
 
 .plumbing-text {
+    font-size: 1vw;
     width: 80%;
     height: auto;
-    line-height: 30px;
 }
 
 /* End of services */
