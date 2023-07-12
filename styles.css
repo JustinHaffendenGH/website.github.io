@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: "Audiowide", sans-serif;
+  }
+
 /* Start of header */
 nav {
     display: flex;
@@ -130,6 +135,12 @@ a {
 
 .thermal-img-container img {
     height: 400px;
+    border-radius: 5px;
+}
+
+.thermal-text {
+    width: 80%;
+    line-height: 30px;
 }
 
 .plumbing-container {
@@ -161,6 +172,12 @@ a {
 
 .plumbing-img-container img {
     height: 500px;
+    border-radius: 5px;
+}
+
+.plumbing-text {
+    width: 80%;
+    line-height: 30px;
 }
 
 /* End of services */
