@@ -4,13 +4,14 @@
 }
 
 body {
+    background-color: white;
     font-family: "Audiowide", sans-serif;
   }
 
 /* Start of header */
 nav {
     display: flex;
-    width: 95vw;
+    width: 100%;
     height: auto;
     padding: 10px;
 }
@@ -95,13 +96,16 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
     background-color: #d5e9f7;
     padding-top: 100px;
     padding-bottom: 100px;
-    border-bottom: solid 2px black;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -149,6 +153,7 @@ a {
     height: auto;
     border-radius: 5px;
     min-width: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .thermal-text {
@@ -190,6 +195,7 @@ a {
     height: auto;
     min-width: 150px;
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .plumbing-text {
