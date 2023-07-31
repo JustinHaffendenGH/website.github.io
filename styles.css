@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -99,7 +101,6 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
     height: auto;
     margin: auto;
     background-color: #d5e9f7;
@@ -440,6 +441,11 @@ a {
         background-color: #333;
     }
 
+    .contacts-header {
+      color: white;
+      padding: 50px;
+    }
+
     .contacts-inner-container {
         display: flex;
         padding: 60px;
@@ -450,13 +456,33 @@ a {
 
     .contacts-details {
         display: flex;
+        flex-direction: column;
         align-items: center;
         padding-top: 100px;
         gap: 100px;
     }
 
+    .contact-links {
+      display: flex;
+      color: white;
+      padding: 50px;
+      gap: 35px;
+  }
+
+    .contact-links i:hover {   
+      
+      transition: 0.5s;
+      transform: translateY(-10px);
+      
+    }
+  
+  .contact-opening-times {
+    color: white;
+  }
+
     .contacts-address {
         display: flex;
+        color: white;
         align-items: center;
         justify-content: center;
     }
@@ -470,12 +496,6 @@ a {
         max-width: fit-content;
     }
 
-    .contact-links {
-        display: flex;
-        padding: 50px;
-        background-color: rgb(192, 183, 183);
-        gap: 20px;
-    }
 
     iframe {
     
@@ -486,7 +506,6 @@ a {
 /* End of contacts */
 
 /* Start of footer */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 
 
