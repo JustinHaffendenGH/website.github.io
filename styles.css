@@ -13,16 +13,22 @@ body {
   }
 
 /* Start of header */
+
+header {
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+}
+
 nav {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: auto;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .logo {
-    flex: 1;
     padding-left: 20px;
 }
 
@@ -32,8 +38,10 @@ nav {
 
 .links {
     display: flex;
+    flex: 2;
     padding-right: 50px;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .links ul {
@@ -47,7 +55,11 @@ nav {
 a {
     font-size: 18px;
     text-decoration: none;
-    color: black;    
+    color: black;
+}
+
+a:hover {
+  color: rgb(116, 116, 116);
 }
 
 .border {
@@ -92,6 +104,15 @@ a {
     gap: 20px;
     
 }
+
+.i-banner {
+  transition: 0.5s;
+}
+
+.i-banner:hover {
+
+  transform: translateY(-10px);
+}
 /* End of banner */
 
 /* Start of services */
@@ -125,7 +146,6 @@ a {
     padding: 0 150px 100px 150px;
     align-items: center;
     justify-content: center;
-    margin: auto;
 }
 
 .thermal-description {
@@ -148,7 +168,6 @@ a {
 }
 
 .thermal-img-container img {
-    width: 80%;
     height: auto;
     border-radius: 5px;
     min-width: 150px;
@@ -156,8 +175,7 @@ a {
 }
 
 .thermal-text {
-    font-size: 1vw;
-    width: 80%;
+    font-size: 1.4vw;
     height: auto;
 }
 
@@ -165,7 +183,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
     padding: 0 150px 100px 150px;
 }
 
@@ -190,7 +207,6 @@ a {
 }
 
 .plumbing-img-container img {
-    width: 80%;
     height: auto;
     min-width: 150px;
     border-radius: 5px;
@@ -198,163 +214,138 @@ a {
 }
 
 .plumbing-text {
-    font-size: 1vw;
-    width: 80%;
-    height: auto;
+    font-size: 1.4vw;
+}
+
+.image-slideshow {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+.img-ss {
+  width: 80%;
+  margin: 50px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .5;}
+  to {opacity: 1;}
 }
 
 /* End of services */
+
 /* Start of gallery */
 
-.gallery-container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #bdd8f1;
-  gap: 50px;
+.gallery-container{
   padding: 100px;
+  margin: 0;
+  display:grid;
+  place-items:center;
+  background-color:#010101;
 }
 
-.gallery-header {
-  padding: 50px;
+.gallery-header h1 {
+  color: white;
+  padding: 100px;
+
 }
 
-.gallery {
-  display: grid;
-  grid-template-rows: repeat(5, 18vh);
-  grid-template-columns: repeat(2, 45vw);
-  transition: all 0.3s ease(gravity);
-  background-color: #82a6cb;
-  border-radius: 10px;
-  padding: 0.25em;
-
-  @media (min-width: 45em) {
-    grid-template-rows: repeat(2, 20vh);
-  }
-
-  @media (min-width: 15em) and (orientation: landscape) {
-    grid-template-columns: repeat(5, 18vw);
-    grid-template-rows: repeat(2, 45vh);
-  }
-    
- @media (min-width: 65em) {
-    grid-template-columns: repeat(10, 8vw);
-    grid-template-rows: 25vh;
-  }
+.image-container {
+	font-family: Lato, sans-serif;
+	margin: 0;
+	padding: 1rem;
+	min-height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.gallery-img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  transition: all 0.3s/2 ease(downhill);
-  position: relative;
-  box-shadow: 0 0 0 #0000;
-  opacity: 0.67;
-  filter: sepia(80%) hue-rotate(180deg);
-
-  &:first-child {
-    border-radius: 10px 10px 0 0;
-  }
-  &:last-child {
-    border-radius: 0 0 10px 10px;
-  }
-
-  @media (min-width: 45em) and (max-width: 59.99em) {
-    &:first-child {
-      border-radius: 10px 0 0 0;
-    }
-    &:nth-child(5) {
-      border-radius: 0 10px 0 0;
-    }
-    &:nth-child(6) {
-      border-radius: 0 0 10px 0;
-    }
-    &:last-child {
-      border-radius: 0 0 0 10px;
-    }
-  }
-
-  @media (min-width: 65em) {
-    &:first-child {
-      border-radius: 10px 0 0 10px;
-    }
-    &:last-child {
-      border-radius: 0 10px 10px 0;
-    }
-  }
-
-  &:hover {
-    opacity: 1;
-    z-index: 1;
-    box-shadow: 1em 1em 1em #0004;
-    transition: all 0.3s ease(downhill);
-    filter: sepia(0%) hue-rotate(0deg);
-    border-radius: 5px;
-    width: 300%;
-    height: 300%;
-    left: -100%;
-    top: -100%;
-
-    
-
-    @media (min-width: 40em) {
-      width: 250%;
-      height: 500%;
-      left: -75%;
-      top: -200%;
-    }
-    
-    @media (min-width: 10em) and (orientation: landscape) {
-      width: 250%;
-      height: 200%;
-    }
-       
-    @media (min-width: 40em) and (orientation: portrait) {
-      width: 300%;
-      height: 300%;
-      left: -100%;
-      top: -100%;
-    }
-
-    @media (min-width: 65em) {
-      width: 350%;
-      height: 150%;
-      left: -75%;
-      top: -25%;
-
-      ~ .gallery-img {
-        left: 175%;
-      }
-    }
-
-    @media (min-width: 65em) and (orientation: landscape) {
-      width: 300%;
-      height: 300%;
-      left: -75%;
-      top: -100%;
-
-      ~ .gallery-img {
-        left: 100%;
-      }
-    }
-  }
+.image-container img {
+	width: 100%;
+	display: block;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	transition: transform 1000ms;
 }
+
+.image-container ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	max-width: 100%;
+	width: 70rem;
+}
+
+.image-container figure {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.image-container figure::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200%;
+	height: 200%;
+	background: rgba(0, 0, 0, 0.5);
+	transform-origin: center;
+	opacity: 0;
+	transform: scale(2);
+	transition: opacity 300ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.image-container figcaption {
+		transform: translate3d(0, 2rem, 0);
+	}
+	
+	.image-container figure::after {
+		border-radius: 50%;
+		transform: scale(0);
+		transition: transform 900ms;
+	}
+	
+	.image-container a:is(:hover, :focus) figure::after {
+		transform: scale(2.5);
+	}
+
+	.image-container a:is(:hover, :focus) img {
+		transform: scale(1.2);
+	}
+}
+
+/* */
 
 .insta-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
+}
+
+.insta-container h2 {
+  padding-top: 150px;
+  text-align: center;
+  color: white;
 }
 
 .insta-header {
   padding: 50px;
+  width: 50%;
 }
+
 
 .insta-icon {
   display: flex;
@@ -374,7 +365,7 @@ a {
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 1300px) {
     .thermal-container {
         display: flex;
         flex-direction: column;
@@ -388,6 +379,10 @@ a {
 
     .thermal-img-container {
         justify-content: center;
+    }
+
+    .img-ss {
+      margin: 25px;
     }
 
     .plumbing-container {
@@ -409,6 +404,17 @@ a {
         padding-bottom: 30px;
     }
 
+    .image-container {
+      font-family: Lato, sans-serif;
+      margin: 0;
+      padding: 1rem;
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 900px
+    }
+
     .contacts-inner-container {
         display: flex;
         flex-direction: column;
@@ -428,6 +434,20 @@ a {
 
 }
 
+@media (max-width: 1100px) {
+
+  .image-container {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px
+  }
+}
+
 
 /* Start of contacts */
 
@@ -436,22 +456,20 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding: 100px;
         background-color: #333;
     }
 
     .contacts-header {
       color: white;
-      padding: 50px;
     }
 
     .contacts-inner-container {
         display: flex;
-        padding: 60px;
         margin-top: 100px;
         background-color: #434343;
-    }
+        padding: 60px;
+        }
 
 
     .contacts-details {
@@ -461,24 +479,25 @@ a {
         padding-top: 100px;
         gap: 100px;
     }
+  
+    .contact-opening-times {
+      color: white;
+    }
+
 
     .contact-links {
       display: flex;
       color: white;
       padding: 50px;
       gap: 35px;
-  }
+    }
 
     .contact-links i:hover {   
-      
+        
       transition: 0.5s;
       transform: translateY(-10px);
-      
+        
     }
-  
-  .contact-opening-times {
-    color: white;
-  }
 
     .contacts-address {
         display: flex;

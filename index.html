@@ -15,18 +15,23 @@
         <header>
             <nav>
                 <div class="logo">
-                    <img src="./images/opp-mini-logo.png" alt="Plumbway logo" class="header-logo">
+                    <a href="#home">
+                        <img src="./images/opp-mini-logo.png" alt="Plumbway logo" class="header-logo">
+                    </a>    
                 </div>
                 <div class="links">
                     <ul>
                         <li>
-                            <a href="">Home </a>
+                            <a href="#home">Home </a>
                         </li>
                         <li>
-                            <a href=""> Services </a>
+                            <a href="#services"> Services </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#gallery"> Gallery </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
                                 Contact
                             </a>
                         </li>
@@ -34,7 +39,7 @@
                 </div>
             </nav>
         </header>
-        <div class="border"></div>
+        <div class="border"  id="home"></div>
         <!-- End of header -->
         <!-- Start of banner -->
         <div class="banner">
@@ -44,21 +49,21 @@
         <div class="banner-contacts">
         
             <a href="mailto: abc@example.com">
-                <i class="fa-solid fa-envelope fa-xl"></i>
+                <i class="fa-solid fa-envelope fa-xl i-banner"></i>
             </a>
             <a href="tel: 07263764536">
-                <i class="fa-solid fa-phone fa-xl"></i>
+                <i class="fa-solid fa-phone fa-xl i-banner"></i>
             </a>
 
             <a href="https://wa.me/07263764536">
-                <i class="fa-brands fa-whatsapp fa-xl"></i>
+                <i class="fa-brands fa-whatsapp fa-xl i-banner"></i>
             </a>
 
         </div>
         </div>
         <!-- End of banner -->
         <!-- Start of services -->
-        <div class="services-container">
+        <div class="services-container" id="services">
             <div class="services-title">
                 <h1>Services</h1>
             </div>
@@ -67,22 +72,49 @@
                     <h2>Solar Thermal</h2>
                     <i class="fa-solid fa-solar-panel fa-xl"></i>
                     <div class="thermal-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus quod ipsam, fuga minima iure magni eos consequuntur aspernatur sit dolorum itaque odit corporis tempora. Blanditiis officia magni illum nesciunt iure ratione odio voluptate, veniam at? Nisi tenetur vero aliquam, voluptas veniam nemo, ea earum ex repellat perspiciatis asperiores molestiae!</p>
+                        <p>Our engineers have a wealth of knowledge and possess a lot of experience working with all makes and models of solar heating systems. For our engineers, no job is too big or small. When you contact Our Planet Plumbing, you can expect to deal with friendly experts who show the same level of professionalism across every job they undertake.</p>
                     </div>                </div>
                 <div class="thermal-img-container">
-                <img src="./images/solar-thermal.png" alt="Solar Thermal">
+                    <div class="image-slideshow">
+                        <div class="image fade">
+                            <img src="./images/thermal1.jpeg" alt="" class="img-ss">
+                        </div>
+                        <div class="image fade">
+                            <img src="./images/photo-2.jpeg" alt="" class="img-ss">
+                        </div>
+                        <div class="image fade">
+                            <img src="./images/photo-1.jpeg" alt="" class="img-ss">
+                        </div>
+                        <div class="image fade">
+                            <img src="./images/thermal3.jpeg" alt="" class="img-ss">
+                        </div>
+                    </div>
                 </div>              
             </div>
 
             <div class="plumbing-container">                
                 <div class="plumbing-img-container">
-                <img src="./images/plumbing.jpeg" alt="plumbing img">
+                    <div class="image-slideshow">
+                        <div class="image2 fade">
+                            <img src="./images/plumbing.jpeg" alt="" class="img-ss">
+                        </div>
+                        <div class="image2 fade">
+                            <img src="./images/plumbing2.jpeg" alt="" class="img-ss">
+                        </div>
+                        <div class="image2 fade">
+                            <img src="./images/plumbing3.jpeg" alt="" class="img-ss">
+                        </div>
+                        <div class="image2 fade">
+                            <img src="./images/plumbing4.jpeg" alt="" class="img-ss">
+                        </div>
+                    </div>
                 </div>
                 <div class="plumbing-description">
                     <h2>Plumbing</h2>
                     <i class="fa-solid fa-wrench fa-xl"></i>
                     <div class="plumbing-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus quod ipsam, fuga minima iure magni eos consequuntur aspernatur sit dolorum itaque odit corporis tempora. Blanditiis officia magni illum nesciunt iure ratione odio voluptate, veniam at? Nisi tenetur vero aliquam, voluptas veniam nemo, ea earum ex repellat perspiciatis asperiores molestiae!</p>
+                        <p>Our Planet Plumbing is a family run business and we have been in the trade for over 10 years, with a vast knowledge in all plumbing and heating matters.
+                            Every member of our team is a fully qualified engineer, fully trained in the installation, repair and maintenance of heating and plumbing systems. No matter the problem, you can rely on a trusted engineers from our team to reach your property quickly and to find a cost-effective solution.</p>
                     </div>
                 </div>             
             </div>
@@ -94,24 +126,80 @@
 
         <!-- End of Gallery -->
 
-        <div class="gallery-container">
+        <div class="gallery-container" id="gallery">
 
             <div class="gallery-header">
                 <h1>Gallery</h1>
             </div>
 
-            <div class="gallery">
-                <img src='./images/photo-1.jpeg' alt='' class="gallery-img">
-                <img src='./images/photo-2.jpeg' alt='' class="gallery-img">
-                <img src='./images/photo-3.jpeg' alt='' class="gallery-img">
-                <img src='./images/photo-4.jpeg' alt='' class="gallery-img">
-                <img src='./images/photo-5.jpeg' alt='' class="gallery-img">
-                <img src='./images/photo-6.jpeg' alt='' class="gallery-img">
-                <img src='./images/photo-7.jpeg' alt='' class="gallery-img">
-                <img src='./images/photo-8.jpeg' alt='' class="gallery-img">
-                <img src='./images/photo-9.jpeg' alt='' class="gallery-img">
-                <img src='./images/photo-10.jpeg' alt='' class="gallery-img">
-              </div>
+            <div class="image-container">
+                <ul>
+                    <li>
+                        <a>
+                            <figure>
+                                <img src='./images/photo-1.jpeg' alt=''>                                
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <figure>
+                                <img src='./images/photo-10.jpeg' alt=''>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <figure>
+                                <img src='./images/photo-2.jpeg' alt=''>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <figure>
+                                <img src="./images/photo-3.jpeg" alt="">
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <figure>
+                                <img src='./images/photo-4.jpeg' alt=''>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <figure>
+                                <img src='./images/photo-9.jpeg' alt=''>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <figure>
+                                <img src="./images/photo-5.jpeg" alt="">
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <figure>
+                                <img src='./images/photo-6.jpeg' alt=''>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <figure>
+                                <img src='./images/photo-7.jpeg' alt=''>
+                            </figure>
+                        </a>
+                    </li>
+                    
+                </ul>
+                </div>
 
               <div class="insta-container">
                 <h2 class="insta-header">For our lastest photos visit us on instagram!</h2>
@@ -124,7 +212,7 @@
         <!-- End of Gallery -->
         <!-- Start of contact-->
 
-        <div class="contacts-container">   
+        <div class="contacts-container" id="contact">   
 
             <div class="contacts-header">
                 <h1>Contacts</h1> 
@@ -141,6 +229,7 @@
                             <tr><th>Tuesday</th><td>9am - 5pm</td></tr>
                             <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
                             <tr><th>Thursday</th><td>9am - 5pm</td></tr>
+                            <tr><th>Friday</th><td>9am - 5pm</td></tr>
                         </table>
                     </div>
                     <div class="contact-links">                
@@ -156,10 +245,11 @@
                             Saint Leonards-on-sea,<br>
                             TN38 9DL
                             </address>
-                    </div>                    
-                    <div class="contacts-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.88333932092!2d0.5461675769978381!3d50.87035945704037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df1076a7162e4f%3A0x792ff12f2565c98c!2s97%20Stonehouse%20Dr%2C%20Hastings%2C%20Saint%20Leonards-on-sea%20TN38%209DG!5e0!3m2!1sen!2suk!4v1689704681097!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+                    <div class="contacts-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.88333932092!2d0.5461675769978381!3d50.87035945704037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df1076a7162e4f%3A0x792ff12f2565c98c!2s97%20Stonehouse%20Dr%2C%20Hastings%2C%20Saint%20Leonards-on-sea%20TN38%209DG!5e0!3m2!1sen!2suk!4v1689704681097!5m2!1sen!2suk" width="auto" min-height="250" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>                    
+                    
                 </div>
                 
             </div>
@@ -193,10 +283,10 @@
                       </a></li>
                   </ul>
                   <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#gallery">Gallery</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
               
                   </ul>
                   <p>&copy;2012 Our Planet Plumbing | All Rights Reserved</p>
@@ -213,7 +303,7 @@
 
 
 
-        <script src="./app.js"></script>
+        <script src="./main.js"></script>
 
     </body>
     </html>
